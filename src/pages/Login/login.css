@@ -1,0 +1,8 @@
+.iconsStyle{display: flex; align-items: center;}
+
+.btn-signin {
+    line-height: 38px!important;
+    text-transform: capitalize!important;
+    background: rgb(99, 102, 241)!important;
+    border-radius: 13px!important;
+}

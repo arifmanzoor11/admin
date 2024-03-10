@@ -1,0 +1,29 @@
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
+
+function preventDefault(event: React.MouseEvent) {
+  event.preventDefault();
+}
+
+const icon_style_pichart = {
+  fontSize: '70px',
+    marginRight: '20px',
+    padding: '15px',
+    background: '#e7efff',
+    borderRadius: '40px',
+    color: '#3375f9',
+}
+export default function Sales() {
+  return (
+    <React.Fragment>
+      <PointOfSaleIcon style={icon_style_pichart} />
+      <div style={{ textAlign:'left'}}> 
+      <small style={{color : '#6f6f6f', textAlign:'left'}}>Sales</small>
+      <Typography component="p" sx={{fontSize : '23px', textAlign : 'left', fontWeight: '600',}} variant="h4">
+      $574.34
+      </Typography>
+      </div>
+    </React.Fragment>
+  );
+}
